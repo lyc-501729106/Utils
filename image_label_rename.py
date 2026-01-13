@@ -26,7 +26,7 @@ def rename_paired_files(image_dir, label_dir):
         return
 
     # 遍历所有图片文件，进行成对重命名
-    for idx, img_path in enumerate(image_files, start=1):
+    for idx, img_path in enumerate(image_files, start=1116):
         # 获取原文件名（不含路径和后缀）
         img_filename = os.path.basename(img_path)
         file_name_without_ext = os.path.splitext(img_filename)[0]
@@ -64,8 +64,8 @@ def rename_paired_files(image_dir, label_dir):
 # 主程序
 if __name__ == "__main__":
     # 定义文件路径（根据你的需求修改）
-    IMAGE_DIR = "data/CMBD/images/val"
-    LABEL_DIR = "data/CMBD/labels/val"
+    IMAGE_DIR = r"F:\牛数据集\UAV数据集\筛选过的\UAV_CATTLE2\images\val"
+    LABEL_DIR = r"F:\牛数据集\UAV数据集\筛选过的\UAV_CATTLE2\labels\val"
 
     # 执行重命名操作
     print("开始执行成对文件重命名...")

@@ -1,3 +1,6 @@
+'''
+将YOLO的数据集格式转为coco数据集格式,路径不能包含中文
+'''
 import os
 import cv2
 import json
@@ -5,7 +8,7 @@ from tqdm import tqdm
 import argparse
 
 name = 'val' # train, val, test
-dataset_name = 'data/CMBD'
+dataset_name = r'C:\Users\yichenlv\Desktop\WAID-final - Copy'
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--root_dir', default=dataset_name, type=str, help="root path of images and labels, include ./images and ./labels and classes.txt")
@@ -111,6 +114,7 @@ def yolo2coco(arg):
             failed_files.append(index)
             print(f"❗ Failed to process file {index}: {e}")
 
+    arg.save_path = os.path.join(dataset_name + '/annotations', arg.save_path)
     # 保存结果
     os.makedirs(os.path.dirname(arg.save_path) or '.', exist_ok=True)
     try:
