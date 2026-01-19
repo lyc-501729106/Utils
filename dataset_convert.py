@@ -7,8 +7,8 @@ import json
 from tqdm import tqdm
 import argparse
 
-name = 'val' # train, val, test
-dataset_name = r'C:\Users\yichenlv\Desktop\WAID-final - Copy'
+name = 'train' # train, val, test
+dataset_name = r'F:\UAV_CATTLE2'
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--root_dir', default=dataset_name, type=str, help="root path of images and labels, include ./images and ./labels and classes.txt")
