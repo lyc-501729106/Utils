@@ -1,4 +1,4 @@
-# pip install tqdm -i https://pypi.tuna.tsinghua.edu.cn/simple/
-# pip install -i https://mirrors.aliyun.com/pypi/simple mkl-2021.4.0-py2.py3-none-win_amd64.whl
+# python -m pip install tqdm -i https://pypi.tuna.tsinghua.edu.cn/simple/
+# python -m pip install -i https://mirrors.aliyun.com/pypi/simple mkl-2021.4.0-py2.py3-none-win_amd64.whl
 
-# pip install -i https://pypi.tuna.tsinghua.edu.cn/simple/ mkl-2021.4.0-py2.py3-none-win_amd64.whl
+# python -m pip install -i https://pypi.tuna.tsinghua.edu.cn/simple/ mkl-2021.4.0-py2.py3-none-win_amd64.whl
